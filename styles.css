@@ -1,19 +1,48 @@
 /*colors
 header:hsl(25,100%,92%)
 clip path:#f0f843 */
-body{
+body {
    font-family: "poppins";
 }
-.container{
+
+.container {
    width: 95%;
-   margin:auto 10px;
+   margin: auto 10px;
 }
-@media screen and (min-width:500px){
-  .container{
-  
-  }
-  header, main{
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
+
+.left {
+   width: 100%;
+}
+
+/*Header styles*/
+header{
+   display: grid;
+   grid-template-columns: 50% 50%;
+}
+.profile {
+   width: 60%;
+   border-radius: 10px;
+   margin-top: -170px;
+}
+
+.clip-path {
+   height: 230px;
+   width: 230px;
+   background: #f0f843;
+   border-radius: 100%;
+   margin-left: 40%;
+}
+
+/*End of header styles*/
+
+
+/*media queries*/
+@media screen and (max-width:768px) {
+   .container {}
+
+   header,
+   main {
+      display: grid;
+      grid-template-columns: 100%;
+   }
 }
