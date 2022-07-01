@@ -4,3 +4,16 @@ clip path:#f0f843 */
 body{
    font-family: "poppins";
 }
+.container{
+   width: 95%;
+   margin:auto 10px;
+}
+@media screen and (min-width:500px){
+  .container{
+  
+  }
+  header, main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
